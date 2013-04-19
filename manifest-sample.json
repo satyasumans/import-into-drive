@@ -1,46 +1,46 @@
 {
-  "manifest_version": 2,
+	"manifest_version": 2,
 
-  "name": "Import into Google Drive Extension",
-  "description": "This Chrome extension allows users to import a file from its URL into Google Drive.",
-  "homepage_url": "https://github.com/tchemineau/import-into-drive",
-  "version": "1.0",
-  "minimum_chrome_version": "26",
-  "key": "XXX",
+	"name": "Import into Google Drive Extension",
+	"description": "This Chrome extension allows users to import a file from its URL into Google Drive.",
+	"homepage_url": "https://github.com/tchemineau/import-into-drive",
+	"version": "1.0",
+	"minimum_chrome_version": "26",
+	"key": "XXX",
 
-  "oauth2": {
-    "client_id": "xyz.apps.googleusercontent.com",
-	"scopes": [
-		"https://docs.google.com/feeds/",
-		"https://docs.googleusercontent.com/",
-		"https://spreadsheets.google.com/feeds/",
-		"https://www.googleapis.com/auth/drive"
-    ]
-  },
+	"oauth2": {
+		"client_id": "xyz.apps.googleusercontent.com",
+		"scopes": [
+			"https://docs.google.com/feeds/",
+			"https://docs.googleusercontent.com/",
+			"https://spreadsheets.google.com/feeds/",
+			"https://www.googleapis.com/auth/drive"
+		]
+	},
 
-  "permissions": [
-	"http://*/*",
-	"https://*/*",
-	"downloads",
-	"fontSettings",
-	"notifications",
-	"tabs",
-	"experimental"
-  ],
-
-  "background": {
-    "scripts": [
-		"resource/js/event.js"
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"downloads",
+		"fontSettings",
+		"notifications",
+		"tabs",
+		"experimental"
 	],
-    "persistent": false
-  },
 
-  "browser_action": {
-    "default_icon": "resource/img/icon-drive-20x20.png",
-    "default_popup": "popup.html"
-  },
-  
-  "web_accessible_resources": [
-    "resource/img/icon-drive-48x48.png"
-  ]
+	"background": {
+		"scripts": [
+			"resource/js/event.js"
+		],
+		"persistent": false
+	},
+
+	"browser_action": {
+		"default_icon": "resource/img/icon-drive-20x20.png",
+		"default_popup": "popup.html"
+	},
+	
+	"web_accessible_resources": [
+		"resource/img/icon-drive-48x48.png"
+	]
 }
