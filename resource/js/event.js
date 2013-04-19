@@ -94,8 +94,6 @@
 
 			if (result.items.length > 0)
 			{
-				console.log('1--------------------------------------------')
-				console.log(result);
 				return responseCallback({id: result.items[0].id});
 			}
 
@@ -107,8 +105,6 @@
 			xhr.onload = function()
 			{
 				var result = JSON.parse(this.response);
-				console.log('2--------------------------------------------')
-				console.log(result);
 				return responseCallback({id: result.id});
 			};
 
